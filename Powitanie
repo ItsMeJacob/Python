@@ -1,0 +1,24 @@
+# program pierwszy - powitanie
+'''
+print('Witaj na zajęciach z informatyki ')
+imie = input('Jak masz na imię? ')
+print('Witaj ',imie)
+klasa = input('Do której klasy chodzisz? ')
+
+# Drugi sposób wyświetlania zmiennych
+print(f'Wiem {imie}, że chodzisz do klasy {klasa} ')
+'''
+# Popracujmy z liczbami
+'''
+x = int(input('Podaj liczbę do obliczeń: '))
+print('Suma dwóch podanych liczb wynosi: ',x+x)
+
+c = x*x
+print(f'Iloczyn dwóch podanych liczb wynosi: {c}')
+'''
+
+a = int(input('Podaj pierwszy bok prostokąta: '))
+b = int(input('Podaj drugi bok prostokąta: '))
+p = a*b
+print(f'Pole prostokąta o podanych bokach wynosi: {p}')
+
