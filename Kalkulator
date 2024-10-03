@@ -1,0 +1,22 @@
+# Instrukcje warunkowe if elif else
+# 3LB_a Panuś
+# Program kalkulator
+print('Program kalkulator')
+wybor = input('Podaj działanie jakie chcesz wykonać: +,-,*,/ : ')
+print('Wybrałeś działanie',wybor)
+
+x = int(input('Podaj wartość pierwszej liczby: '))
+y = int(input('Podaj wartość drugiej liczby: '))
+
+if wybor == '+':
+    print('Suma:',x+y)
+elif wybor == '-':
+    print('Różnica:',x-y)
+elif wybor == '*':
+    print('Iloczyn:',x*y)
+elif wybor == '/':
+    print(f'Iloraz liczb {x} oraz {y} wynosi {x/y}')
+    
+else:
+    print('Działanie nieznane')
+
