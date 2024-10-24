@@ -1,0 +1,29 @@
+#pętla for, while + gra odgadnij liczbę
+#3LB_a Panuś
+'''
+for i in range(2,11,2):
+    print(i,end=' ')
+print()
+'''
+import time
+import random
+
+for i in range(3,0,-1):
+    print(i)
+    time.sleep(0.5)
+print('NO TO GRAMY!!!')
+
+x = random.randint(0,99)
+#print(f'Wylosowana liczba: {x}')
+
+a = int(input('Odgadnij wylosowaną liczbę: '))
+
+while a != x:
+    if a < x:
+        print('Za mało!')
+    else:
+        print('Za dużo!')
+    a = int(input('Spróbuj jeszcze raz, podaj liczbę: '))
+print('BRAWO!!! Mistrzu odgadłeś liczbę!!!')
+
+
