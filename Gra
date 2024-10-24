@@ -8,22 +8,31 @@ print()
 import time
 import random
 
+imie = input('Jak masz na imię?')
+for i in imie:
+    print(i,end=' ')
+    time.sleep(1)
+
+print()
+
 for i in range(3,0,-1):
     print(i)
     time.sleep(0.5)
 print('NO TO GRAMY!!!')
 
+licznik = 1
 x = random.randint(0,99)
 #print(f'Wylosowana liczba: {x}')
 
 a = int(input('Odgadnij wylosowaną liczbę: '))
 
 while a != x:
+    licznik = licznik + 1
     if a < x:
         print('Za mało!')
     else:
         print('Za dużo!')
     a = int(input('Spróbuj jeszcze raz, podaj liczbę: '))
-print('BRAWO!!! Mistrzu odgadłeś liczbę!!!')
+print(f'BRAWO!!! Mistrzu odgadłeś liczbę za {licznik} razem!!!')
 
 
